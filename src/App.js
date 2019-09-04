@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './img/nubank.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <img src={logo} className="App-logo" alt="logo" />
       </header>
+      <div className="description_home">
+        <h1>Ser NuBank é ter uma vida financeira descomplicada.</h1>
+      </div>
+      <div className="buttons">
+        <button className="btn -primary">quero ser nubank</button>
+        <button className="btn -secondary">já tenho convite</button>
+        <button className="btn -login">login</button>
+      </div>
     </div>
   );
 }
