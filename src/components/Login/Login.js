@@ -12,7 +12,7 @@ class Login extends React.Component {
                     <span className="bold">CPF</span>
                 </p>
                 <span className="content_input">
-                    <NumberFormat ref={this.input_login} format="### ### ### ##" className="login -input" />
+                    <NumberFormat format="### ### ### ##" className="login -input" />
                 </span>
                 <span className="content_button">
                     <button className="button_login">Continuar</button>

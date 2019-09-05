@@ -73,7 +73,8 @@
     color: #fff;
     background: transparent;
     border: 1px solid #fff;
-    font-weight: 500;   
+    font-weight: 600;
+    font-size: 12px;
   }
 
   .bold {
@@ -84,7 +85,8 @@
     color: #fff;
     background: transparent;
     border: 1px solid #fff;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 12px;
   }
   
   .App-logo {
