@@ -1,24 +1,16 @@
 import React from 'react';
 import logo from './img/nubank.png';
-import Drawer from '@material-ui/core/Drawer';
 import './App.css';
-import DrawerContent from './components/DrawerContent';
+import DrawerContent from './components/DrawerContent/DrawerContent';
+import ICanBeNubank from './components/ICanBeNubank/ICanBeNubank';
+import Login from './components/Login/Login';
+import AlreadyHaveInvitation from './components/AlreadyHaveInvitation/AlreadyHaveInvitation';
 
 function App() {
+  const [content, setContent] = React.useState(null);
 
-  const [state, setState] = React.useState({
-    bottom: false
-  });
-
-  const toggleDrawer = (side, open) => event => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setState({ ...state, [side]: open });
-  };
-
-
+  const defineContent = (o) => setContent(o);
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -28,13 +20,11 @@ function App() {
         <h1>Ser NuBank é ter uma vida financeira descomplicada.</h1>
       </div>
       <div className="buttons">
-        <button onClick={toggleDrawer('bottom', true)} className="btn -primary">quero ser nubank</button>
-        <button className="btn -secondary">já tenho convite</button>
-        <button className="btn -login">login</button>
+        <button onClick={() => defineContent(ICanBeNubank)} className="btn -primary">quero ser nubank</button>
+        <button onClick={() => defineContent(AlreadyHaveInvitation)} className="btn -secondary">já tenho convite</button>
+        <button onClick={() => defineContent(<Login />)} className="btn -login">login</button>
       </div>
-      <Drawer anchor="bottom" open={state.bottom} onClose={toggleDrawer('bottom', false)}>
-        <DrawerContent></DrawerContent>
-      </Drawer>
+      <DrawerContent anchor={'bottom'} content={content} toggleHandler={setContent}></DrawerContent>
     </div>
   );
 }

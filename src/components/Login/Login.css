@@ -1,0 +1,39 @@
+.login.-title {
+    padding: 0px 10px 10px 15px;
+    margin-top: 0px;
+}
+
+
+.content_input {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 12px;
+    justify-content: left;
+    margin-bottom: 20%;
+}
+
+.content_button {
+    width: 100%;
+}
+
+.button_login {
+    padding: 13px;
+    width: 100%;
+    color: purple;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 600;
+    outline: none;
+}
+
+.login.-input {
+    padding: 10px;
+    width: 100%;
+    border: transparent;
+    outline: none;
+    font-size: 20px;
+}
