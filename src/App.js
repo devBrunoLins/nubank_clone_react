@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './img/nubank.png';
 import Drawer from '@material-ui/core/Drawer';
 import './App.css';
+import DrawerContent from './components/DrawerContent';
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
         <button className="btn -login">login</button>
       </div>
       <Drawer anchor="bottom" open={state.bottom} onClose={toggleDrawer('bottom', false)}>
-        <p>works!</p>
+        <DrawerContent></DrawerContent>
       </Drawer>
     </div>
   );
