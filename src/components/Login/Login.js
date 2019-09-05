@@ -3,7 +3,6 @@ import  './Login.css';
 import NumberFormat from 'react-number-format';
 
 class Login extends React.Component {
-
     render(){
         return (
             <section>
