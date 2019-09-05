@@ -16,6 +16,10 @@
     width: 100%;
 }
 
+.disabled {
+    color: #eee;
+}
+
 .button_login {
     padding: 13px;
     width: 100%;
