@@ -3,6 +3,7 @@ import  './Login.css';
 import NumberFormat from 'react-number-format';
 import Slide from '@material-ui/core/Slide';
 import PasswordShowHide from '../PasswordShowHide/PasswordShowHide';
+import * as loginService from './LoginService.ts';
 
 class Login extends React.Component {
     constructor(props){
@@ -10,6 +11,7 @@ class Login extends React.Component {
         this.state = {value: '', step: 1, password: ''};
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.loginService = loginService;
     }
 
     handleChange = (e) => this.setState({value: e.target.value})
@@ -22,8 +24,17 @@ class Login extends React.Component {
         e.preventDefault();
     }
     
-    verifyAccess = () => {
-        console.log("opa");
+    verifyAccess = (e) => {
+        this.loginService.verifyAccess()
+            .subscribe(
+                (data) => {
+                    console.log(data);
+                },
+                (err) => {
+                    console.error(err);
+                }
+        );
+        e.preventDefault();
     }
 
     render(){
