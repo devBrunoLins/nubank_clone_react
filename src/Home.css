@@ -4,7 +4,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;    
   }
   
   .description_home {
@@ -13,7 +13,7 @@
     color: #fff;
     text-align: left;
     padding: 0px 37px;
-    font-size: 12px;
+    font-size: 12px;    
   }
   
   .buttons {
@@ -28,12 +28,12 @@
   .btn {
     width: 70%;
     position: absolute;
-    display: flex;
-    overflow: hidden;
+    display: flex;    
     margin: 3px 3px;
     padding: 12px 12px;
     cursor: pointer;
     user-select: none;
+    overflow: hidden;
     transition: all 150ms linear;
     text-align: center;
     white-space: nowrap;
@@ -58,14 +58,14 @@
   .btn.-primary {
     color: purple;
     background: #fff;
-    bottom: 0px;
+    bottom: 0px;    
   }
 
   .btn.-primary:hover {
     color: #fff;
     background: purple;
     border: none;
-    outline: none;
+    outline: none;    
   }
 
   .btn.-login {
@@ -74,11 +74,11 @@
     background: transparent;
     border: 1px solid #fff;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 12px;    
   }
 
   .bold {
-    font-weight: 600;
+    font-weight: 600;    
   }
 
   .btn.-secondary {
@@ -86,11 +86,11 @@
     background: transparent;
     border: 1px solid #fff;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 12px;    
   }
   
   .App-logo {
-    height: 40vmin;
+    height: 40vmin;    
     pointer-events: none;
     display: flex;
     pointer-events: none;
@@ -110,19 +110,10 @@
     flex-direction: column;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: white;    
   }
   
   .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    color: #61dafb;    
   }
   

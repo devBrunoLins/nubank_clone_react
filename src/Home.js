@@ -1,14 +1,13 @@
 import React from 'react';
 import logo from './img/nubank.png';
-import './App.css';
+import './Home.css';
 import DrawerContent from './components/DrawerContent/DrawerContent';
 import ICanBeNubank from './components/ICanBeNubank/ICanBeNubank';
 import Login from './components/Login/Login';
 import AlreadyHaveInvitation from './components/AlreadyHaveInvitation/AlreadyHaveInvitation';
 
-function App() {
+function Home() {
   const [content, setContent] = React.useState(null);
-
   const defineContent = (o) => setContent(o);
   
   return (
@@ -24,9 +23,9 @@ function App() {
         <button onClick={() => defineContent(AlreadyHaveInvitation)} className="btn -secondary">já tenho convite</button>
         <button onClick={() => defineContent(<Login />)} className="btn -login">login</button>
       </div>
-      <DrawerContent anchor={'bottom'} content={content} toggleHandler={setContent}></DrawerContent>
+      <DrawerContent anchor={'bottom'} content={content} toggleHandler={setContent}/>
     </div>
   );
 }
 
-export default App;
+export default Home;

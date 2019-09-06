@@ -3,6 +3,6 @@
       "title": "Bem-vindo ao React"
     },
     "home": {
-      "description": "Para começar, edite o arquivo <code>src/App.js</code> e salve para atualizar."
+      "description": "Para começar, edite o arquivo <code>src/Home.js</code> e salve para atualizar."
     }
   }
