@@ -1,10 +1,9 @@
-import { Observable } from 'rxjs';
+// import { of, throwError } from 'rxjs';
 
-const verifyAccess = () => {
+// import * as http from '../../BaseRequest';
 
-    return Observable.create((observer: any) => {
-        observer.next({tst: "Maluco deu certo!"});
-    });
+const verifyAccess = (e: any) => {
+    
 }
 
 export {
